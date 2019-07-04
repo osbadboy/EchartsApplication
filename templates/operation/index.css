@@ -1,0 +1,155 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+button{
+  border: none;
+  outline: none;
+}
+html,body{
+  height: 100%;
+}
+.operation{
+  min-height: 100%;
+  background-color: #ebeff8;
+  padding:10px 15px;
+}
+.wrapper{
+  background-color: #ffffff;
+  box-shadow: 2px 5px 7px 0 rgba(0,0,0,.1);
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+.wrapper .header{
+  height: 60px;
+  background-color: #f7faff;
+  position: relative;
+  box-shadow: 20px 0 0 0 #f7faff, -20px 0 0 0 #f7faff;
+  margin-bottom: 10px;
+}
+.wrapper .header h2{
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+    color: #4c5471;
+  }
+  .wrapper .header .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: 25px;
+  }
+  .wrapper .header .icon a{
+    font-size: 12px;
+    color: #666666;
+    line-height: 60px;
+    transition: all .3s;
+  }
+  .wrapper .header .icon a:hover{
+    color: black;
+  }
+  .wrapper .header .icon a span{
+    padding-right: 6px;
+    font-size: 14px;
+  }
+  /* *************************************************** */
+  
+.operation .layui-row{
+  padding: 5px 0 20px 0;  
+}
+.operation .title{
+  height: 36px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.operation .title h5{
+  line-height: 36px;
+  padding-left: 12px;
+  position: relative;
+}
+.operation .title h5::before{
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  content: '';
+  width: 4px;
+  height: 10px;
+  background-color: #5874c8;
+}
+.operation .title .change_btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 36px;
+}
+.operation .title .change_btn button{
+  background-color: #ebeff8;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.operation .title .change_btn ul{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #ebeff8;
+  display: none;
+}
+.operation .title .change_btn ul li{
+  line-height: 26px;
+  user-select: none;
+  padding-left: 8px;
+  font-size: 12px;
+}
+.operation .title .change_btn ul li:hover{
+  background-color: #d7dbe4;
+}
+.operation .picture ul{
+  font-size: 0;
+  overflow: hidden;
+}
+.operation .picture li{
+  display: inline-block;
+  width: 60%;
+}
+.operation .picture li:last-child{
+  width: 32%;
+  margin-left: 3px;
+}
+.operation .picture li img{
+  width: 100%;
+}
+.operation .info_list{
+  padding: 40px 20px 0;
+}
+.operation .info_list li{
+  line-height: 40px;
+  color: #666;
+  
+}
+.operation .info_list li+li{
+  margin-top: 15px;
+}
+.operation .info_list li i{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  vertical-align:middle;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-color: aliceblue;
+}
+.operation table tr th {
+  background-color: #eaeef7;
+}
+.row-two>div+div{
+  border-left: 1px solid rgb(214, 214, 214)
+}

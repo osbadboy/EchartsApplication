@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+html,body{
+  height: 100%;
+}
+.operation{
+  min-height: 100%;
+  background-color: #ebeff8;
+  padding:10px 15px;
+}
+.wrapper{
+  background-color: #ffffff;
+  box-shadow: 2px 5px 7px 0 rgba(0,0,0,.1);
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+.wrapper .header{
+  height: 60px;
+  background-color: #f7faff;
+  position: relative;
+  box-shadow: 20px 0 0 0 #f7faff, -20px 0 0 0 #f7faff;
+  margin-bottom: 10px;
+}
+.wrapper .header h2{
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+    color: #4c5471;
+  }
+  .wrapper .header .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: 25px;
+  }
+  .wrapper .header .icon a{
+    font-size: 12px;
+    color: #666666;
+    line-height: 60px;
+    transition: all .3s;
+    border: 1px solid #808080;
+    padding:5px 6px;
+    border-radius: 4px;
+  }
+  .wrapper .header .icon a:hover{
+    color: black;
+  }
+  .wrapper .header .icon a span{
+    padding-right: 4px;
+    font-size: 12px;
+  }
+  .part-one table tr th,.part-one table tr td{
+    font-size: 12px;
+    text-align: center;
+    color: #808080;
+  }
+  .part-one table tr th {
+    background-color: #eaeef7;
+    padding: 5px 15px;
+    color: #303030;
+  }

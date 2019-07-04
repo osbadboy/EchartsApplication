@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+html,body{
+  height: 100%;
+}
+.useStatus{
+  min-height: 100%;
+  background-color: #ebeff8;
+  padding:10px 15px;
+}
+.wrapper{
+  background-color: #ffffff;
+  box-shadow: 2px 5px 7px 0 rgba(0,0,0,.1);
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+.wrapper .header{
+  height: 60px;
+  background-color: #f7faff;
+  position: relative;
+  box-shadow: 20px 0 0 0 #f7faff, -20px 0 0 0 #f7faff;
+  margin-bottom: 10px;
+}
+.wrapper .header h2{
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+    color: #4c5471;
+}
+.wrapper .header .icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: 25px;
+}
+.wrapper .header .icon a{
+  font-size: 12px;
+  color: #666666;
+  line-height: 60px;
+  transition: all .3s;
+}
+.wrapper .header .icon .on{
+  color: #4d7be7;
+}
+.wrapper .header .icon a:hover{
+ 
+}
+.wrapper .header .icon a span{
+  padding-right: 6px;
+  font-size: 14px;
+}
+/* ******************************************************** */
+button{
+  outline: none;
+  border: none;
+}
+.useStatus .wrapper .choose_btn{
+  height: 30px;
+  margin: 20px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.useStatus .left_btn{
+  display: inline-block;
+  min-width: 1px;
+}
+.useStatus .right_btn{
+  
+  display: inline-block 
+}
+.useStatus .part_one_table{
+  border: 1px solid transparent;
+  display: none;
+}
+.useStatus .choose_btn .left_btn button{
+  height: 30px;
+  width: 80px;
+  border:1px solid rgb(230, 230, 230);
+  background-color: white;
+  border-radius: 2px;
+  float: left;
+  color: #777;
+  font-size: 12px;
+}
+.useStatus .choose_btn .left_btn  .on{
+  box-shadow: inset -2px 3px 3px 0 rgba(177, 177, 177, 0.4),
+              inset 0px -1px 3px 0 rgba(177, 177, 177, 0.486);
+  border: none;
+}
+.useStatus  .right_btn .word_choose{
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  margin-left: 10px;
+}
+.useStatus  .right_btn .word_choose span{
+  line-height: 30px;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 15px;
+  color: #777;
+  height: 30px;
+  border:1px solid rgb(230, 230, 230);
+  border-right-color: transparent;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.useStatus  .right_btn .word_choose button{
+  height: 30px;
+  padding: 0 10px;
+  float: left;
+  background-color: #ebeff8;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: #777;
+}
+.useStatus  .right_btn .word_choose button i{
+  padding-left: 5px;
+  vertical-align: middle;
+}
+.useStatus  .right_btn .search_input{
+  line-height: 30px;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 8px;
+  color: #777;
+  height: 30px;
+  border:1px solid rgb(230, 230, 230);
+  border-right-color: transparent;
+}
+.useStatus .right_btn .search_btn{
+  background-color:#588af4!important;
+  color: white!important;
+  font-size: 12px;
+}
+
+.useStatus  .right_btn .word_choose ul{
+  position:absolute;
+  top: 100%;
+  right: 0;
+  z-index: 99;
+  display: none;
+}
+.useStatus  .right_btn .word_choose ul li{
+  line-height: 30px;
+  color: #777;
+  max-width: 120px;
+  text-align: center;
+  padding: 0 20px;
+  background-color: #dee2eb;
+  user-select:none;
+}
+.useStatus  .right_btn .word_choose ul li:hover{
+  background-color: #d2d6df;
+}
+
+.useStatus .table{
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.useStatus .table .layui-table{
+  margin: 0;
+  font-size: 12px;
+}
+.useStatus .page {
+  text-align: center;
+  margin: 10px 0 18px 0;
+}
+.useStatus .page a,.useStatus .page span{
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.useStatus .page .layui-laypage-em{
+  background-color: #588af4;
+}
+/* .useStatus .page .pagination{
+  display:inline-block;
+}
+.useStatus .page .pagination::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.useStatus .page .pagination li{
+  height: 32px;
+  width: 32px;
+  float: left;
+  border-radius: 5px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid rgb(230, 230, 230);
+}
+.useStatus .page .pagination li+li{
+  margin-left: 10px;
+}
+.useStatus .page .pagination li a{
+  font-size: 12px;
+  color: #777;
+  display: block;
+} */
+.useStatus .page .layui-laypage{
+  margin: 0 auto;
+}
+.layui-table td,.layui-table th{
+  font-size: 12px;
+  text-align: center;
+  }
+  .layui-table th{
+  padding: 5px 15px;
+  background-color: #eaeef7;
+}
+  

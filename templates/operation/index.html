@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>运维信息</title>
+  <link rel="stylesheet" href="../../static/common/layui-src/dist/css/layui.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!--运维信息页面-->
+  <div class="operation" id="operation">
+      <div class="wrapper">
+        <div class="header">
+          <h2>资源分布</h2>
+        </div>
+        <div class="layui-row">
+          <div class="layui-col-lg8 layui-col-md8 layui-col-sm8 ayui-col-xs12" style="padding-right:10px;border-right: 1px solid rgb(226, 226, 226);">
+            <div class="title">
+              <h5>机房平面图</h5>
+              <div class="change_btn">
+                <button class="down_menu">物流位置展示<i class="layui-icon  layui-icon-triangle-d"></i></button>
+                <ul>
+                  <li>机房位置展示</li>
+                  <li>电梯位置展示</li>
+                  <li>办公位置展示</li> 
+                </ul>
+              </div>
+            </div>
+            <div class="picture">
+              <ul>
+                <li><img src="./img/yunwei1.jpg" alt=""></li>
+                <li><img src="./img/yunwei2.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <div class="layui-col-lg4 layui-col-md4 layui-col-sm4 ayui-col-xs12">
+            <ul class="info_list">
+              <li>序列号：ZJ10355974</li>
+              <li><i class="info-icon" style=" background-image: url(./img/1.png)"></i>IP地址：192.168.1.1</li>
+              <li><i class="info-icon" style=" background-image: url(./img/3.png)"></i>型号：戴尔K401</li>
+              <li><i class="info-icon" style=" background-image: url(./img/2.png)"></i>管理员：Liii</li>
+              <li><i class="info-icon" style=" background-image: url(./img/4.png)"></i>归属：资源中心</li>
+              <li><i class="info-icon" style=" background-image: url(./img/5.png)"></i>物理位置：601房XXXX机架XX层</li>
+            </ul>
+          </div>
+          <div class="layui-col-lg12 layui-col-md12 layui-col-sm12 ayui-col-xs12">
+            <table class="layui-table">
+              <colgroup>
+                <col width="150">
+                <col width="200">
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>数据库名</th>
+                  <th>归属</th>
+                  <th>描述</th>
+                </tr> 
+              </thead>
+              <tbody>
+                <tr>
+                  <td>RX13974135</td>
+                  <td>资源中心</td>
+                  <td>人口资源数据库</td>
+                </tr>
+                <tr>
+                  <td>RX13974135</td>
+                  <td>资源中心</td>
+                  <td>人口资源数据库</td>
+                </tr>
+                <tr>
+                  <td>RX13974135</td>
+                  <td>资源中心</td>
+                  <td>人口资源数据库</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="header">
+          <h2>监控监视器</h2>
+        </div>
+        <div class="layui-row row-two">
+          <div id="item1" class="layui-col-lg3 layui-col-md3 layui-col-sm12 ayui-col-xs12" style=" height:260px;"></div>
+          <div id="item2" class="layui-col-lg5 layui-col-md5 layui-col-sm6 ayui-col-xs12" style=" height:260px;"></div>
+          <div id="item3" class="layui-col-lg4 layui-col-md4 layui-col-sm6 ayui-col-xs12" style=" height:260px;"></div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="../../static/common/layui-src/dist/layui.js"></script> 
+<script src="../../static/common/jquery.js"></script>
+<script src="../../static/common/echarts.js"></script>
+<script src="./index.js"></script>
+</html>

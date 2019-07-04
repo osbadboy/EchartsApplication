@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>预警信息</title>
+  <link rel="stylesheet" href="../../static/common/layui-src/dist/css/layui.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="operation" id="operation">
+      <div class="wrapper part-one">
+        <div class="header">
+          <h2>数据资源</h2>
+          <div class="icon">
+            <a href="javascript:history.back(-1)" ><span class="layui-icon layui-icon-left"></span>返回</a>
+          </div>
+        </div>
+        <div class="layui-row">
+          <div id="opera_pie" class="layui-col-lg4 layui-col-md4 layui-col-sm4 ayui-col-xs12" style=" height:280px;"></div>
+          <div class="layui-col-lg8 layui-col-md8 layui-col-sm8 ayui-col-xs12">
+            <table class="layui-table">
+              <colgroup>
+                
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>预警ID</th>
+                  <th>时间</th>
+                  <th>预警内容</th>
+                  <th>紧急程度</th>
+                  <th>影响DB</th>
+                  <th>依据事件ID</th>
+                  <th>建议</th>
+                  <th>动作</th>
+                </tr> 
+              </thead>
+              <tbody>
+                <tr>
+                  <td>RX13974135</td>
+                  <td>2019-04-05</td>
+                  <td>XX服务器磁盘将满</td>
+                  <td>一般</td>
+                  <td>居住证信息</td>
+                  <td>CP1000012</td>
+                  <td>扩容或者转移数据</td>
+                  <td>忽略</td>
+                </tr>
+                <tr>
+                  <td>RX13974135</td>
+                  <td>2019-04-05</td>
+                  <td>XX服务器磁盘将满</td>
+                  <td>一般</td>
+                  <td>居住证信息</td>
+                  <td>CP1000012</td>
+                  <td>扩容或者转移数据</td>
+                  <td>忽略</td>
+                </tr>
+                <tr>
+                  <td>RX13974135</td>
+                  <td>2019-04-05</td>
+                  <td>XX服务器磁盘将满</td>
+                  <td>一般</td>
+                  <td>居住证信息</td>
+                  <td>CP1000012</td>
+                  <td>扩容或者转移数据</td>
+                  <td>忽略</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="layui-row">
+            <div id="opera_line" class="layui-col-lg12 layui-col-md12 layui-col-sm12 ayui-col-xs12" style=" height:300px;"></div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="../../static/common/layui-src/dist/layui.js"></script> 
+<script src="../../static/common/jquery.js"></script>
+<script src="../../static/common/echarts.js"></script>
+<script src="./index.js"></script>
+</html>

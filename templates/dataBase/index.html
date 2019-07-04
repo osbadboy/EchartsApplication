@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数据库</title>
+  <link rel="stylesheet" href="../../static/common/layui-src/dist/css/layui.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body> 
+  <div class="dataBase" id="database">
+    <div class="wrapper" >
+      <div class="header">
+        <h2>数据库概况综述</h2>
+      </div>
+      <div class="layui-row" style="padding: 10px 0;">
+        <div  class="layui-col-lg4 layui-col-md6 layui-col-sm6 ayui-col-xs12" style=" height:360px;">
+          <div id="data-first-pie" class="top" style=" height:180px;"></div>
+          <div id="data-second-pie" class="bottom" style=" height:180px;"></div>
+        </div>
+        <div id="date-info" class="layui-col-lg2 layui-col-md6 layui-col-sm6 ayui-col-xs12" style=" height:360px;"></div>
+        <div id="date-update" class="layui-col-lg6 layui-col-md12 layui-col-sm12 ayui-col-xs12" style=" height:360px;"></div>
+      </div>
+    </div>
+    <!--表一-->
+    <div class="table_one">
+        <div class="nav">
+          <button class="ku_table on">库视图</button><button class="biao_table">表视图</button>
+        </div>
+        <div class="wrapper ku_table_box" >
+          <div class="header">
+            <h2>实例列表描述</h2>
+          </div>
+          <div class="change_show">
+            <button class="on oppose_btn">图表</button><button class="oppose_btn">列表</button>
+            <div class="search">
+                <button class="down_menu">数据库名<i class="layui-icon layui-icon-triangle-d"></i></button>
+                <ul >
+                  <li>SDFG2462</li>
+                  <li>GHKE9527</li>
+                </ul> 
+                <input type="text">
+                <button>搜索</button>
+            </div>
+          </div>
+          <div class="table_name">
+            <h5 >数据库列表</h5>
+            <div class="jump_btn">
+              <button><i class="layui-icon layui-icon-left"></i></button><button><i class="layui-icon layui-icon-right"></i> </button>
+            </div>
+          </div>
+          <div style="box-sizing: border-box;padding-bottom: 18px;">
+            <table class="layui-table table_list">
+                <colgroup>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>状态</th>
+                    <th>名称</th>
+                    <th>数据库版本</th>
+                    <th>最近更新</th>
+                    <th>负载</th>
+                    <th>主机名</th>
+                    <th>CPU负载</th>
+                    <th>内存占用</th>
+                    <th>磁盘占用</th>
+                    <th>操作系统</th>
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>在线</td>
+                    <td>MYSQL57</td>
+                    <td>MYSQL1</td>
+                    <td>2017-08-09 11：20:12</td>
+                    <td>7%</td>
+                    <td>closer</td>
+                    <td>33%</td>
+                    <td>35%</td>
+                    <td>23%</td>
+                    <td>63%</td>
+                  </tr>
+                  <tr>
+                      <td>在线</td>
+                      <td>MYSQL57</td>
+                      <td>MYSQL1</td>
+                      <td>2017-08-09 11：20:12</td>
+                      <td>7%</td>
+                      <td>closer</td>
+                      <td>33%</td>
+                      <td>35%</td>
+                      <td>23%</td>
+                      <td>63%</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        <div class="wrapper biao_table_box" style="display:none">
+          <div class="header">
+            <h2>表视图描述</h2>
+          </div>
+          <div class="change_show">
+            <button class="on oppose_btn">图表</button><button class="oppose_btn">列表</button>
+            <div class="search">
+                <button class="down_menu">数据库名<i class="layui-icon layui-icon-triangle-d"></i></button>
+                <ul >
+                  <li>SDFG2462</li>
+                  <li>GHKE9527</li>
+                </ul>
+                <input type="text">
+                <button>搜索</button>
+            </div>
+          </div>
+          <div class="table_name">
+            <h5 >数据库列表</h5>
+            <div class="jump_btn">
+              <button><i class="layui-icon layui-icon-left"></i></button><button><i class="layui-icon layui-icon-right"></i> </button>
+            </div>
+          </div>
+          <div style="box-sizing: border-box;padding-bottom: 18px;">
+            <table class="layui-table table_list">
+                <colgroup>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>状态</th>
+                    <th>名称</th>
+                    <th>数据库版本</th>
+                    <th>最近更新</th>
+                    <th>负载</th>
+                    <th>主机名</th>
+                    <th>CPU负载</th>
+                    <th>内存占用</th>
+                    <th>磁盘占用</th>
+                    <th>操作系统</th>
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>离线</td>
+                    <td>MYSQL69</td>
+                    <td>MYSQL5</td>
+                    <td>2019-08-10 13：28:12</td>
+                    <td>57%</td>
+                    <td>zh</td>
+                    <td>36%</td>
+                    <td>75%</td>
+                    <td>65%</td>
+                    <td>54%</td>
+                  </tr>
+                  <tr>
+                      <td>离线</td>
+                      <td>MYSQL34</td>
+                      <td>MYSQL4</td>
+                      <td>2037-03-05 15：23:12</td>
+                      <td>56%</td>
+                      <td>dd</td>
+                      <td>63%</td>
+                      <td>23%</td>
+                      <td>23%</td>
+                      <td>78%</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+    <!-- 表二 -->
+    <div class="example">
+        <div class="wrapper" style="">
+          <div class="header">
+            <h2>实例详情实例</h2>
+          </div>
+          <div class="layui-row  e_line_one">
+            <div class="layui-col-lg5 layui-col-md5 layui-col-sm12 ayui-col-xs12">
+              <h5 class = "icon_title">人口关系数据库</h5>
+              <ul class="info_list">
+                <li><i class="e_icon" style=" background-image: url(./img/2.png)"></i>创建人：资源中心</li>
+                <li><i class="e_icon" style=" background-image: url(./img/9.png)"></i>创建时间：2019-03-04</li>
+                <li><i class="e_icon" style=" background-image: url(./img/10.png)"></i>最近更新：2019-04-03</li  >
+                <li><i class="e_icon" style=" background-image: url(./img/8.png)"></i>类别：资源库</li>
+                <li><i class="e_icon" style=" background-image: url(./img/6.png)"></i>类型：Oracle</li>
+                <li><i class="e_icon" style=" background-image: url(./img/1.png)"></i>部署主机：ZJ00801</li  >
+                <li><i class="e_icon" style=" background-image: url(./img/7.png)"></i>更新频率：每月</li  >
+              </ul>
+            </div>
+            <div class="layui-col-lg7 layui-col-md7 layui-col-sm12 ayui-col-xs12" style="position:relative">
+              <h5 class="icon_title">表信息</h5>
+              <div class="btn_jump">
+                  <button class="pre_page"><i class="layui-icon layui-icon-left"></i></button>
+                  <button class="next_page"><i class="layui-icon layui-icon-right"></i> </button>
+              </div>
+              <table class="layui-table table_list">
+                  <colgroup>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>表名</th>
+                      <th>字段数</th>
+                      <th>数据量</th>
+                      <th>空间大小</th>
+                      <th>更新频率</th>
+                      <th>最近更新</th>
+                      <th>描述</th>                       
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>XXXXXRCCC</td>
+                      <td>10</td>
+                      <td>312333</td>
+                      <td>XXMB</td>
+                      <td>每月</td>
+                      <td>2017-08-09</td>
+                      <td>人口信息基本表</td>
+                    </tr>
+                    <tr>
+                        <td>XXXXXRCCC</td>
+                        <td>10</td>
+                        <td>312333</td>
+                        <td>XXMB</td>
+                        <td>每月</td>
+                        <td>2017-08-09</td>
+                        <td>人口信息基本表</td>
+                    </tr>
+                    <tr>
+                        <td>XXXXXRCCC</td>
+                        <td>10</td>
+                        <td>312333</td>
+                        <td>XXMB</td>
+                        <td>每月</td>
+                        <td>2017-08-09</td>
+                        <td>人口信息基本表</td>
+                    </tr>
+                    <tr>
+                        <td>XXXXXRCCC</td>
+                        <td>10</td>
+                        <td>312333</td>
+                        <td>XXMB</td>
+                        <td>每月</td>
+                        <td>2017-08-09</td>
+                        <td>人口信息基本表</td>
+                    </tr>
+                    <tr>
+                        <td>XXXXXRCCC</td>
+                        <td>10</td>
+                        <td>312333</td>
+                        <td>XXMB</td>
+                        <td>每月</td>
+                        <td>2017-08-09</td>
+                        <td>人口信息基本表</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+          <div id="ex_data" class="" style=" height:300px; margin-top: 20px;"></div>
+          <div class="layui-row e_line_two">
+            <div id="ex_perf" class="layui-col-lg4 layui-col-md4 layui-col-sm6 ayui-col-xs12" style=" height:320px;"></div>
+            <div id="ex_time" class="layui-col-lg4 layui-col-md4 layui-col-sm6 ayui-col-xs12" style=" height:320px;"></div>
+            <div id="ex_thro" class="layui-col-lg4 layui-col-md4 layui-col-sm12 ayui-col-xs12" style=" height:320px;"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+<script src="../../static/common/layui-src/dist/layui.js"></script> 
+<script src="../../static/common/jquery.js"></script>
+<script src="../../static/common/echarts.js"></script>
+<script src="./index.js"></script>
+</html>

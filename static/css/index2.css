@@ -1,0 +1,214 @@
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:rgba(255, 255, 255, 0.822);
+  font-size: 12px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:rgba(255, 255, 255, 0.822);
+ font-size: 12px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:rgba(255, 255, 255, 0.822);
+ font-size: 12px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:rgba(255, 255, 255, 0.822);
+ font-size: 12px;
+}
+html,body{
+  font-size: 12px;
+  height: 100%;
+}
+.layui-layout-admin{
+  height: 100%;
+}
+.layui-layout-admin .layui-header{
+  background-color: rgb(88 , 116, 200);
+  display: flex;
+}
+.layui-header .layui-logos{
+  width: 200px;
+  line-height: 60px;
+  text-align: left;
+  padding: 0 20px;
+  background-color: rgb(79, 107, 191)!important;
+  box-sizing: border-box;
+}
+.layui-header .layui-logos button{
+  border: none;
+  outline: none;
+  color: aliceblue;
+  background-color: transparent;
+}
+.layui-header .layui-left{
+  flex:1!important;
+  position: relative!important;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+.layui-header .layui-left .icon{
+  position: absolute;
+  top:22px;
+  right: 10px;
+}
+.layui-header .layui-left .icon span{
+  font-size: 16px;
+  margin: 0 3px;
+  padding: 2px;
+  color: rgba(255, 255, 255, 0.822);
+  cursor: pointer;
+}
+.layui-header .layui-left .icon span:hover{
+  color: white;
+}
+.layui-header .layui-left i{
+  position: absolute;
+  top: calc(50% - 8px);;
+  left: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.822);
+  
+}
+.layui-header .layui-left i span{
+  padding-left: 10px;
+  font-size: 12px;
+  vertical-align: top;
+}
+.layui-header .layui-right{
+  background-color: rgb(79, 107, 191)!important;
+  position: relative!important;
+  padding: 0;
+  width: auto;
+}
+.layui-nav .layui-nav-item .layui-nav-child a {
+  font-size: 12px;
+}
+.layui-nav .layui-nav-item >a {
+  font-size: 12px;
+  color: rgba(255,255,255,.9);
+}
+.layui-nav .layui-nav-item
+.layui-logos {
+  background-color: rgb(79, 107, 191);
+}
+.layui-nav .search{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(88 , 116, 200);
+  border: none;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 12px;
+  padding-left: 55px;
+  transition: all .3s
+}
+.layui-nav .search:focus{
+  background-color: rgba(0,0,0,.15);
+  
+}
+.layui-layout-admin .layui-side{
+  background-color:rgb(76, 84, 113)!important;
+}
+.my-cursor {
+  cursor: pointer;
+}
+.layui-side-scroll .layui-nav {
+  background-color: transparent;
+}
+.layui-side-scroll .layui-nav>li{
+  background-color: transparent;
+}
+.layui-side-scroll .layui-nav li a{
+  text-align: center
+}
+.layui-side-scroll .layui-nav li span{
+  padding-right: 15px;
+}
+.layui-side-scroll .layui-nav .line{
+  font-weight: 200;
+  font-size: 16px;
+  color:rgba(255, 255, 255, 0.25);
+}
+
+.layui-side-scroll .layui-nav .layui-icon{
+  vertical-align: middle;
+}
+.layui-side-scroll .layui-nav .layui-nav-bar{
+  background-color:rgb(88, 116, 200);
+}
+.layui-nav-tree .layui-nav-item a:hover{
+  background-color:rgb(68, 76, 103);
+}
+.layui-nav-tree .layui-this>a{
+  background-color:rgb(68, 78, 103);
+  box-shadow:inset -8px 0 0 -2px #5874c8;
+}
+.layui-breadcrumb>* {
+  font-size: 12px;
+}
+.layui-body{
+  background-color: #ebeff8;
+  padding:10px 15px;
+}
+.layui-body .wrapper{
+  background-color: #ffffff;
+  box-shadow: 2px 5px 7px 0 rgba(0,0,0,.1);
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+.wrapper .header{
+  height: 60px;
+  background-color: #f7faff;
+  position: relative;
+  box-shadow: 20px 0 0 0 #f7faff, -20px 0 0 0 #f7faff;
+}
+.wrapper .header h2{
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4c5471;
+}
+.wrapper .header .icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: 25px;
+}
+.wrapper .header .icon a{
+  font-size: 12px;
+  color: #666666;
+  line-height: 60px;
+  transition: all .3s;
+}
+.wrapper .header .icon a:hover{
+  color: black;
+}
+.wrapper .header .icon a span{
+  padding-right: 6px;
+  font-size: 14px;
+}
+.layui-layout-admin .layui-body {
+  bottom: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+.layui-side-scroll .layui-nav .shrink{
+  display: none;
+  transition: all .3s
+}
+.box{
+  display: flex;
+  height: calc(100% - 60px);
+}
+.box .left{
+  width: 200px;
+  position: relative;
+  top:0;
+  
+}
+.box .right{
+  flex: 1;
+  position: relative;
+  left: 0;
+  top:0;
+}
